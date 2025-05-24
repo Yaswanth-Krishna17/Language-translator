@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center/cover;
+}
+
+.container {
+    max-width: 700px;
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.text-input textarea {
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+    border: 2px solid #00bc69;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    resize: none;
+    color: #000000;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-input textarea:focus {
+    border-color: #009a4d;
+    box-shadow: 0 0 8px #009a4d;
+}
+
+.text-input textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+.input-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #8d3030;
+    padding: 8px 0;
+}
+
+.clear-btn {
+    background: #00bc69;
+    border: none;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    color: rgb(51, 83, 159);
+}
+
+.clear-btn:hover {
+    background: #009a4d;
+    transform: scale(1.05);
+}
+
+.controls {
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #52c1bb;
+}
+
+.icons i {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+.container .translate-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(135deg, #00bc69, #009a4d);
+    box-shadow: 0 10px 25px rgba(0,188,105,0.4);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.container .translate-btn:hover {
+    background: linear-gradient(135deg, #009a4d, #00bc69);
+    transform: scale(1.05);
+}
+
